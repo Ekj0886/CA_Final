@@ -1,0 +1,14 @@
+make
+echo "Compile Done"
+echo "Generate Sharper Image"
+./CA_Final -d 10 input/dog.bmp output/dog_CPU_2D.bmp
+echo ""
+./CA_Final -s 10 input/dog.bmp output/dog_CPU_1D.bmp
+echo ""
+./CA_Final -c 10 input/dog.bmp output/dog_GPU.bmp
+echo ""
+./CA_Final -d 75 input/Elephant.bmp output/Elephant_CPU_2D.bmp
+echo ""
+./CA_Final -s 75 input/Elephant.bmp output/Elephant_CPU_1D.bmp
+echo ""
+./CA_Final -c 75 input/Elephant.bmp output/Elephant_GPU.bmp
